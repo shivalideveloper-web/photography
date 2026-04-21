@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Frontend\HomeController;
-use App\Http\Controllers\Frontend\ServiceController;
+use App\Http\Controllers\frontend\HomeController;
+use App\Http\Controllers\frontend\ServiceController;
 
 Route::any('/', [HomeController::class, 'home'])->name('home');
 Route::any('/service', [ServiceController::class, 'service'])->name('service');
